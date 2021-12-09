@@ -9,7 +9,7 @@ import (
 // if logs is true, it outputs kubectl logs to stdout.
 func (s *Skaffold) Run(ctx context.Context, filename string, logs bool) error {
 	args := []string{
-		"dev",
+		"run",
 		"-f",
 		filename,
 		"--port-forward",
